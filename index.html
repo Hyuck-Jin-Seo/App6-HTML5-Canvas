@@ -55,10 +55,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		ctx.fillText("Hyuck-Jin Seo", 10, 50);
 	}
 	
-	const sunset = document.createElement('img');     //Created image of sunset
-	sunset.setAttribute('src','https://s7d2.scene7.com/is/image/TWCNews/FL_ClearwaterBeach_Sunset_Ocean_UGC_JohnReynolds');
-	sunset.setAttribute('height', 100); //fixed image height
-	sunset.setAttribute('width', 75);   // fixed image width
+	var sunset = new Image();   //Created image of sunset
+	sunset.src = "https://www.liquidsandsolids.com/wp-content/uploads/2022/10/dreaming-of-sunset.jpg";
+	
 	
 	function drawImage(){          //created function to draw image in canvas
 		var c = document.getElementById("canvas1");
