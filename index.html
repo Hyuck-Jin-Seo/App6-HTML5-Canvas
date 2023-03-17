@@ -38,6 +38,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+	
+	
+	function drawRectangle(){          //created function to draw rectangle in canvas
+		var c = document.getElementById("canvas1");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.rect(20, 20, 150, 100);
+		ctx.stroke();
+	}
+	
+	
+	
+	
+	
 </script>
 
 
@@ -70,7 +84,21 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <div id="content" class="w3-container">
 	
 	<br /> <!--Created line break for better format-->
+	
 	<canvas id="canvas1" width="300" height="225" style="border:1px solid #000000;" ></canvas>       <!-- Created canvas with border -->
+	
+	<a onclick="drawRec();"class="w3-btn w3-black"> Rectangle </a>  <!-- Created button to draw rectangle on canvas -->
+	                <p id="canvas1"></p>   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
