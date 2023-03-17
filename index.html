@@ -52,14 +52,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var c = document.getElementById("canvas1");
 		var ctx = c.getContext("2d");
 		ctx.font = "30px Arial";
-		ctx.fillText("Hyuck-Jin Seo", 10, 50, 100, 75;
+		ctx.fillText("Hyuck-Jin Seo", 10, 50);
 	}
 	
 	function drawImage(){          //created function to draw image in canvas
 		var c = document.getElementById("canvas1");
 		var ctx = c.getContext("2d");
 		const image = document.getElementById("sunset");
-		ctx.drawImage(image, 10, 10);
+		ctx.drawImage(image, 10, 10, 100, 75);
 	}
 	
 	
