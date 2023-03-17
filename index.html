@@ -59,7 +59,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var c = document.getElementById("canvas1");
 		var ctx = c.getContext("2d");
 		const image = document.getElementById("sunset");
-		ctx.drawImage(image, 0, 0);
+		ctx.drawImage(image, 0, 0, 100, 100);
 	}
 	
 	
@@ -110,7 +110,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	<a onclick="drawImage();"class="w3-btn w3-black"> Image </a>  <!-- Created button to draw image on canvas -->
 	        <p id="canvas1"></p>
-		<img id="sunset" src="https://www.liquidsandsolids.com/wp-content/uploads/2022/10/dreaming-of-sunset.jpg" width="100" height="75" />. <!-- Created Image-->
+		<img id="sunset" src="https://www.liquidsandsolids.com/wp-content/uploads/2022/10/dreaming-of-sunset.jpg" width="100" height="75" /> <!-- Created Image-->
 	
 	
 	
