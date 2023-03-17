@@ -55,6 +55,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		ctx.fillText("Hyuck-Jin Seo", 10, 50);
 	}
 	
+	function drawImage(){          //created function to draw image in canvas
+		var c = document.getElementById("canvas1");
+		var ctx = c.getContext("2d");
+		var img = document.getElementById("sunset");
+		ctx.drawImage(img, 10, 10);
+	}
 	
 	
 	
@@ -97,13 +103,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<br />
 	
 	<a onclick="drawRectangle();"class="w3-btn w3-black"> Rectangle </a>  <!-- Created button to draw rectangle on canvas -->
-	                <p id="canvas1"></p>   
+	        <p id="canvas1"></p>   
 	
 	<a onclick="drawName();"class="w3-btn w3-black"> Name </a>  <!-- Created button to draw name on canvas -->
-	                <p id="canvas1"></p>
+	        <p id="canvas1"></p>
 	
-	
-	
+	<a onclick="drawImage();"class="w3-btn w3-black"> Image </a>  <!-- Created button to draw image on canvas -->
+	        <p id="canvas1"></p>
+		<img id="sunset" src="https://storage.googleapis.com/pod_public/1300/122734.jpg" alt="Sunsent Image" width="220" height="277"> <!-- Created image of sunset -->
+		
 	
 	
 	
